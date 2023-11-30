@@ -7,7 +7,7 @@ import { Db, MongoClient, ServerApiVersion } from 'mongodb';
       provide: 'DATABASE_CONNECTION',
       useFactory: async (): Promise<Db> => {
         try {
-          const uri = "mongodb+srv://kasun:kasun@cluster0.qve4pav.mongodb.net/?retryWrites=true&w=majority";
+          const uri = 'mongodb connection string';
 
           const client = await MongoClient.connect(uri);
           return client.db('demo-app');
